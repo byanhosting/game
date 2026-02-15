@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tebak Angka RPG PRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game glow">
+    <h1>🎮 Tebak Angka RPG PRO</h1>
+    <h3 id="player">Giliran: Player 1</h3>
+
+    <p id="info">Level 1 | HP 5 | Score 0</p>
+
+    <input type="number" id="input" placeholder="Masukkan angka">
+    <button onclick="tebak()">TEBAK</button>
+
+    <p id="pesan"></p>
+</div>
+
+<audio id="benar" src="sound/benar.mp3"></audio>
+<audio id="salah" src="sound/salah.mp3"></audio>
+<audio id="gameover" src="sound/gameover.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.game {
+    background: #111;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 25px cyan;
+    animation: fadeIn 1s;
+}
+
+.glow {
+    animation: glow 2s infinite alternate;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: cyan;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00cccc;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px cyan; }
+    to { box-shadow: 0 0 30px cyan; }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
